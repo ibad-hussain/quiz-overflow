@@ -1,0 +1,77 @@
+.navbar-main {
+    height: 6.5vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+    padding: 10px;
+}
+
+.logo a {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    color: black;
+}
+
+.logo a img {
+    width: 35px;
+}
+
+.logo a p {
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.links button {
+    background-color: #43d685;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    outline-style: solid;
+    outline-width: 2px;
+    outline-color: rgb(0, 0, 0);
+}
+
+.links button p {
+    font-size: 18px;
+}
+
+.links button:hover {
+    background-color: #00ff73;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+.links a {
+    transition: all 0.2s ease;
+    padding: 2px 6px;
+    border: none;
+    border-radius: 4px;
+}
+
+.links a:hover {
+    background-color: #43d68550;
+}
+
+.active {
+    font-weight: 600;
+}

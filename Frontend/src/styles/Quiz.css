@@ -1,0 +1,116 @@
+.quiz-main {
+    padding: 30px 80px;
+    flex: 2;
+}
+
+.main-title {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.quizzes-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin: 25px 0px;
+}
+
+.quizes-card {
+    width: 360px;
+    border-radius: 8px;
+    padding: 15px;
+    flex-shrink: 0;
+    background: linear-gradient(to right, #43d685, #63afc2);
+    cursor: grab;
+}
+
+
+.quizes-card-quizPage {
+    transition: all 0.2s ease;
+}
+
+.quizes-card-quizPage:hover {
+    box-shadow: 2px 2px 10px black;
+}
+
+.card-title-1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-title-1 p:nth-child(1) {
+    font-size: 21px;
+    font-weight: 550;
+}
+
+.card-title-1 p:nth-child(2) {
+    font-size: 14px;
+    border: none;
+    border-radius: 6px;
+    padding: 3px 8px;
+    background-color: #ffbd44;
+}
+
+.card-title-2 {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    margin-top: 5px;
+    font-weight: 450;
+}
+
+.card-btn {
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 17px;
+    padding: 10px 15px;
+    color: white;
+    background: #ad5389;
+    background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+    border: none;
+    border-radius: 50px;
+}
+
+.card-btn svg {
+    margin-right: 3px;
+    transform: rotate(30deg);
+    transition: transform 0.5s cubic-bezier(0.76, 0, 0.24, 1);
+}
+
+.card-btn span {
+    transition: transform 0.5s cubic-bezier(0.76, 0, 0.24, 1);
+}
+
+.card-btn:hover svg {
+    transform: translateX(5px) rotate(90deg);
+}
+
+.card-btn:hover span {
+    transform: translateX(7px);
+}
+
+#card-btn-disabled {
+    transition: none;
+    transform: none;
+    cursor: not-allowed;
+    color: rgba(255, 255, 255, 0.671);
+}
+
+
+@media(max-width: 1320px) {
+    .quizzes-container {
+        justify-content: center;
+    }
+
+    .main-title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

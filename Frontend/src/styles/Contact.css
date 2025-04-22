@@ -1,0 +1,71 @@
+.contact-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 2;
+}
+
+.form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    background-color: #9af7c4;
+    border: none;
+    border-radius: 8px;
+    padding: 20px 10px;
+    box-shadow: 1px 1px 10px black;
+    transition: all 0.3s ease;
+}
+
+.contact-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    font-weight: 550;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 8px;
+}
+
+#contact-name,
+#contact-email,
+#contact-query {
+    width: 30vw;
+    font-size: 15px;
+    padding: 5px 15px;
+    border: none;
+    border-radius: 15px;
+    outline: none;
+}
+
+#contact-query {
+    height: 180px;
+    resize: none;
+}
+
+#contact-btn {
+    font-size: 18px;
+    padding: 5px 15px;
+    border: none;
+    border-radius: 15px;
+    background-color: #63afc2;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+#contact-btn:hover {
+    box-shadow: 1px 1px 10px black;
+}
+
+.error-msg {
+    font-size: 14px;
+    color: red;
+}

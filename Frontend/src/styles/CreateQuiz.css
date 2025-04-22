@@ -1,0 +1,115 @@
+.createQuiz-main {
+    padding: 30px 80px;
+    flex: 2;
+}
+
+.createQuiz-title {
+    font-size: 30px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.createQuiz-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.formDetails {
+    margin-top: 30px;
+    margin-bottom: 8px;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.details-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 4px;
+    width: 50vw;
+}
+
+.details-block input {
+    display: block;
+    width: 80%;
+    padding: 5px 10px;
+    font-size: 18px;
+    border: 1px solid black;
+    border-radius: 50px;
+    background: linear-gradient(to right, #43d685, #63afc2);
+}
+
+.details-block input::placeholder {
+    color: rgb(85, 78, 78);
+}
+
+.formQuestions {
+    margin-top: 30px;
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: -12px;
+}
+
+.questions-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 3px;
+    width: 80vw;
+}
+
+.questions-block input {
+    display: block;
+    width: 90%;
+    padding: 5px 10px;
+    font-size: 18px;
+    border: 1px solid black;
+    border-radius: 50px;
+}
+
+.questions-block input::placeholder {
+    color: rgb(85, 78, 78);
+}
+
+#questionText {
+    margin-top: 20px;
+    background-color: #63afc2;
+}
+
+.createQuiz-main-btns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+#addQuestion,
+#createQuiz {
+    background-color: orange;
+    padding: 8px 15px;
+    font-size: 18px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px black;
+    margin-top: 8px;
+    transition: all 0.2s ease;
+}
+
+#createQuiz {
+    background-color: #28a745;
+}
+
+#createQuiz:hover {
+    background-color: #218838;
+}
+
+#addQuestion:hover {
+    background-color: rgb(211, 137, 0);
+}

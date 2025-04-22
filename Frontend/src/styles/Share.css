@@ -1,0 +1,131 @@
+.share-main {
+    padding: 30px 50px;
+    flex: 2;
+}
+
+.share-container {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.share-left,
+.share-right {
+    border: none;
+    border-radius: 10px;
+    padding: 30px;
+    background-color: #9af7c4;
+}
+
+.share-left {
+    max-height: 350px;
+}
+
+.share-left>img {
+    width: 200px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px black;
+    cursor: grab;
+}
+
+.share-left>p:nth-child(2) {
+    margin-top: 6px;
+    font-size: 18px;
+    color: #333;
+    font-weight: 700;
+}
+
+.share-left>p:nth-child(3) {
+    font-size: 15px;
+    color: #333;
+    font-weight: 500;
+}
+
+.share-links {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.share-links div {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.share-links a {
+    color: #333;
+    font-weight: 500;
+}
+
+.share-right {
+    width: 100%;
+}
+
+.badges-title {
+    font-size: 25px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.badges {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.badge {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: black;
+    width: 150px;
+    box-shadow: 8px 8px 0px #000000;
+    border: 3px solid #000000;
+    border-radius: 12px;
+    position: relative;
+    overflow: hidden;
+    cursor: grab;
+}
+
+.badge img {
+    width: 35px;
+    margin-bottom: 5px;
+    margin-top: 10px;
+}
+
+.badge-p1,
+.badge-p2 {
+    font-size: 16px;
+    font-weight: 550;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.badge-p2 {
+    margin-top: -2px;
+    margin-bottom: 25px;
+}
+
+.badge-p3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    font-size: 12px;
+    width: 80px;
+    height: 20px;
+    margin-top: 1px;
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
+    background-color: black;
+    color: white;
+}

@@ -1,0 +1,91 @@
+.register-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    flex: 2;
+}
+
+.form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    background-color: #9af7c4;
+    border: none;
+    border-radius: 8px;
+    padding: 20px 10px;
+    box-shadow: 1px 1px 10px black;
+    transition: all 0.3s ease;
+}
+
+.register-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    font-weight: 550;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 8px;
+}
+
+#register-name,
+#register-email,
+#register-password {
+    width: 30vw;
+    font-size: 15px;
+    padding: 5px 15px;
+    border: none;
+    border-radius: 15px;
+    outline: none;
+}
+
+#register-gender {
+    width: 32vw;
+    height: 30px;
+    font-size: 15px;
+    padding: 5px 14px;
+    border: none;
+    border-radius: 15px;
+    outline: none;
+    background-color: white;
+    appearance: none;
+    background-image: url("data:image/svg+xml;charset=US-AxSCII,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='5'%3E%3Cpath fill='black' d='M0 0l5 5 5-5z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 12px;
+}
+
+#register-btn {
+    font-size: 18px;
+    padding: 5px 15px;
+    border: none;
+    border-radius: 15px;
+    background-color: #63afc2;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+#register-btn:hover {
+    box-shadow: 1px 1px 10px black;
+}
+
+.error-msg {
+    font-size: 14px;
+    color: red;
+}
+
+.not-account {
+    font-size: 14px;
+}
+
+.not-account a {
+    color: blue;
+}

@@ -1,0 +1,133 @@
+.footer-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-container {
+    padding: 0px 130px;
+    height: 70px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    background: #43d685;
+    background: linear-gradient(135deg,
+            #43d685 25%,
+            #6bf3a8 25%,
+            #6bf3a8 50%,
+            #43d685 50%,
+            #43d685 75%,
+            #6bf3a8 75%,
+            #6bf3a8);
+    background-size: 40px 40px;
+    animation: move 4s linear infinite;
+}
+
+.footer-left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    font-size: 18px;
+}
+
+.footer-left button {
+    font-size: 18px;
+    color: black;
+    font-family: inherit;
+    cursor: pointer;
+    position: relative;
+    border: none;
+    background: none;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 400ms;
+    transition-property: color;
+}
+
+.footer-left button:focus,
+.footer-left button:hover {
+    color: black;
+}
+
+.footer-left button:focus:after,
+.footer-left button:hover:after {
+    width: 100%;
+    left: 0%;
+}
+
+.footer-left button:after {
+    content: "";
+    pointer-events: none;
+    bottom: -2px;
+    left: 50%;
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background-color: black;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 400ms;
+    transition-property: width, left;
+}
+
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.about p:nth-child(1) {
+    cursor: pointer;
+}
+
+.about p:nth-child(2) {
+    padding: 3px 8px;
+    border: none;
+    border-radius: 5px;
+    background-color: white;
+    opacity: 0;
+    transition: opacity 0.2s ease-in;
+}
+
+.about:hover p:nth-child(2) {
+    display: block;
+    opacity: 1;
+}
+
+.about p:nth-child(2) a {
+    color: blue;
+}
+
+.footer-right {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+#qo {
+    position: relative;
+    animation: opacityUp 2.5s ease-out forwards;
+    opacity: 0;
+}
+
+
+@keyframes move {
+    0% {
+        background-position: 0 0;
+    }
+
+    100% {
+        background-position: 40px 40px;
+    }
+}
+
+@keyframes opacityUp {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}

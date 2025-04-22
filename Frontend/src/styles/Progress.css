@@ -1,0 +1,180 @@
+.progress-main {
+    padding: 30px 80px;
+    flex: 2;
+}
+
+.progress-main-title {
+    font-size: 30px;
+    font-weight: 600;
+    margin-top: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.totalQuizzesTaken,
+.totalBadgesEarned {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#totalQuizzesTaken,
+#totalBadgesEarned {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.totalBadgesEarned {
+    margin: 0;
+}
+
+#colorChange1Progress {
+    animation: colorChange1 10s infinite;
+    font-size: 12px;
+}
+
+#colorChange2Progress {
+    animation: colorChange2 10s infinite;
+    font-size: 12px;
+}
+
+.language-container {
+    display: inline-block;
+    margin: 30px auto 20px auto;
+    font-size: 18px;
+}
+
+#language {
+    margin-left: 10px;
+    font-size: 18px;
+    padding: 8px;
+    outline: none;
+    border: none;
+    border-radius: 15px;
+    background: linear-gradient(to right, #43d685, #63afc2);
+    width: auto;
+    cursor: pointer;
+}
+
+#widthCalculator {
+    position: absolute;
+    visibility: hidden;
+    white-space: nowrap;
+    font-size: 18px;
+    padding: 8px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #9af7c4;
+}
+
+th,
+td {
+    border: 2px solid #ffffff;
+    padding: 6px;
+    text-align: center;
+}
+
+th {
+    background-color: #007bff;
+    color: white;
+    font-weight: bold;
+}
+
+
+@keyframes colorChange1 {
+    0% {
+        color: black;
+    }
+
+    10% {
+        color: red;
+    }
+
+    20% {
+        color: purple;
+    }
+
+    40% {
+        color: green;
+    }
+
+    30% {
+        color: blue;
+    }
+
+    50% {
+        color: orange;
+    }
+
+    60% {
+        color: white;
+    }
+
+    70% {
+        color: brown;
+    }
+
+    80% {
+        color: pink;
+    }
+
+    90% {
+        color: yellow;
+    }
+
+    100% {
+        color: cyan;
+    }
+}
+
+
+@keyframes colorChange2 {
+    0% {
+        color: pink;
+    }
+
+    10% {
+        color: cyan;
+    }
+
+    20% {
+        color: red;
+    }
+
+    30% {
+        color: yellow;
+    }
+
+    40% {
+        color: green;
+    }
+
+    50% {
+        color: brown;
+    }
+
+    60% {
+        color: blue;
+    }
+
+    70% {
+        color: white;
+    }
+
+    80% {
+        color: orange;
+    }
+
+    90% {
+        color: black;
+    }
+
+    100% {
+        color: purple;
+    }
+}

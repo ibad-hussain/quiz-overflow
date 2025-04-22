@@ -1,0 +1,113 @@
+.trendingQuizes-main {
+    margin-top: 100px;
+    padding: 0px 15vw;
+}
+
+.trendingQuizes-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+    font-size: 40px;
+    font-weight: 550;
+}
+
+.quiz-container {
+    width: 520px;
+    background-color: #63afc2;
+    border: none;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    padding: 10px 10px 25px 10px;
+    background: linear-gradient(to right, #43d685, #63afc2);
+}
+
+.quiz-container:hover {
+    transform: translateY(-10px);
+    cursor: grab;
+    box-shadow: 1px 1px 10px black;
+}
+
+.quiz-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.quiz-title-1 {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.quiz-title-2 button {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 17px;
+    padding: 5px 10px;
+    color: white;
+    background: #ad5389;
+    background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+    border: none;
+    letter-spacing: 0.05em;
+    border-radius: 8px;
+}
+
+.quiz-title-2 button svg {
+    margin-right: 3px;
+    transform: rotate(30deg);
+    transition: transform 0.5s cubic-bezier(0.76, 0, 0.24, 1);
+}
+
+.quiz-title-2 button span {
+    transition: transform 0.5s cubic-bezier(0.76, 0, 0.24, 1);
+}
+
+.quiz-title-2 button:hover svg {
+    transform: translateX(5px) rotate(90deg);
+}
+
+.quiz-title-2 button:hover span {
+    transform: translateX(7px);
+}
+
+.quiz-ques {
+    font-size: 19px;
+    font-weight: 450;
+    margin-bottom: 12px;
+}
+
+.quiz-options {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+#span {
+    padding: 0px 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(90, 90, 83, 0.288);
+}
+
+.quiz-container-1 {
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.quiz-container-2 {
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.quiz-container-3 {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}

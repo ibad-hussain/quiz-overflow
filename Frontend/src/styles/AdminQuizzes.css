@@ -1,0 +1,46 @@
+.adminQuizzes-main {
+    padding: 30px 80px;
+    flex: 2;
+}
+
+.adminQuizzes-title {
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.filter-controls {
+    display: inline-block;
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+#titleSelect,
+#categorySelect {
+    margin-left: 10px;
+    font-size: 18px;
+    padding: 8px;
+    outline: none;
+    border: none;
+    border-radius: 15px;
+    background: linear-gradient(to right, #43d685, #63afc2);
+    width: auto;
+    cursor: pointer;
+}
+
+#titleWidthCalculator,
+#categoryWidthCalculator {
+    position: absolute;
+    visibility: hidden;
+    white-space: nowrap;
+    font-size: 18px;
+    padding: 8px;
+}
+
+
+#linkIcon {
+    width: 15px;
+    margin-left: 4px;
+    margin-bottom: -2px;
+    cursor: pointer;
+}

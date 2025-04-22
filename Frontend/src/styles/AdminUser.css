@@ -1,0 +1,106 @@
+.adminUser-main {
+    padding: 30px 80px;
+    flex: 2;
+}
+
+.adminUser-title {
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.upper-adminUser-userDetails {
+    margin-top: 30px;
+    margin-bottom: 8px;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.adminUser-userDetails {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 20px;
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.2);
+    background: linear-gradient(to right, #43d685, #63afc2);
+}
+
+.adminUser-userDetails-cont1 {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.adminUser-userDetails-cont1>div:nth-child(1) {
+    font-weight: 600;
+}
+
+.adminUser-userDetails-cont2 {
+    width: 130px;
+}
+
+.animate {
+    width: 60px;
+    aspect-ratio: .5;
+    display: grid;
+}
+
+.animate:before {
+    content: "";
+    width: 30%;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    margin: auto auto 0;
+    background: #CF4647;
+    animation: l9-0 .5s cubic-bezier(0, 800, 1, 800) infinite;
+}
+
+.animate:after {
+    content: "";
+    width: 100%;
+    aspect-ratio: 1/cos(30deg);
+    margin: 0 auto auto;
+    clip-path: polygon(50% -50%, 100% 50%, 50% 150%, 0 50%);
+    background: #524656;
+    animation: l9-1 .5s linear infinite;
+}
+
+.upper-adminUser-quizzesDetails {
+    margin-top: 30px;
+    margin-bottom: 8px;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+
+@keyframes l9-0 {
+
+    0%,
+    2% {
+        translate: 0 0%
+    }
+
+    98%,
+    to {
+        translate: 0 -.2%
+    }
+}
+
+@keyframes l9-1 {
+
+    0%,
+    5% {
+        rotate: 0deg
+    }
+
+    95%,
+    to {
+        rotate: -60deg
+    }
+}

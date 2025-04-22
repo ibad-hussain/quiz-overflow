@@ -1,0 +1,43 @@
+.pageNotFound-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #333;
+    flex: 2;
+}
+
+.pageNotFound-main img {
+    max-width: 400px;
+    width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+    animation: float 3s ease-in-out infinite;
+}
+
+.pageNotFound-main h3 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.pageNotFound-main p {
+    font-size: 1rem;
+    color: #666;
+    max-width: 500px;
+}
+
+
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
