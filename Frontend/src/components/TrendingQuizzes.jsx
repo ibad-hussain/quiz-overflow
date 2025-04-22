@@ -1,6 +1,5 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import '../styles/TrendingQuizes.css';
-import { Link } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
 import { AppContext } from '../context/AppContext';
 
@@ -60,8 +59,7 @@ const TrendingQuizzes = () => {
                     <div className="quiz-title">
                         <div className="quiz-title-1">C++ Beginner Quiz</div>
                         <div className="quiz-title-2">
-                            <Link to={"/quizzes"}>
-                                <button>
+                                <button onClick={handleTrendingQuiz}>
                                     <svg
                                         height="24"
                                         width="24"
@@ -76,7 +74,6 @@ const TrendingQuizzes = () => {
                                     </svg>
                                     <span>Start Quiz</span>
                                 </button>
-                            </Link>
                         </div>
                     </div>
                     <div className="quiz-ques">💬&nbsp;&nbsp;Which of the following statements about multiple inheritance in C++ is true?</div>
@@ -94,8 +91,7 @@ const TrendingQuizzes = () => {
                     <div className="quiz-title">
                         <div className="quiz-title-1">Python Interview Quiz</div>
                         <div className="quiz-title-2">
-                            <Link to={"/quizzes"}>
-                                <button>
+                                <button onClick={handleTrendingQuiz}>
                                     <svg
                                         height="24"
                                         width="24"
@@ -110,7 +106,6 @@ const TrendingQuizzes = () => {
                                     </svg>
                                     <span>Start Quiz</span>
                                 </button>
-                            </Link>
                         </div>
                     </div>
                     <div className="quiz-ques">💬&nbsp;&nbsp;Which of the following is the correct way to open a file for both reading and writing in Python?</div>
