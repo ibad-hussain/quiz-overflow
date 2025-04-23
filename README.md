@@ -8,7 +8,7 @@
 
 ## 🚀 Screenshots
 ![Project screenshot](./Project_screenshots/Image1.png)
-<br>
+<br><br>
 ![Project screenshot](./Project_screenshots/Image2.png)
 
 <br>
