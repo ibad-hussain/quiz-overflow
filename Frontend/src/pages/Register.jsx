@@ -103,7 +103,7 @@ const Register = () => {
                     <div>
                         <input
                             type="password"
-                            placeholder='Password'
+                            placeholder='Password (min 8 characters)'
                             id='register-password'
                             {...register("registerPassword", {
                                 required: "Password missing",
