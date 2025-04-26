@@ -1,4 +1,4 @@
-import React, { useContext, useEffect } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import '../styles/Navbar.css';
 import { images } from '../utils/assets';
 import { NavLink, useNavigate } from 'react-router-dom';
@@ -9,12 +9,14 @@ import { toastOptions } from "../utils/toastConfig";
 
 
 const Navbar = () => {
-  
+
   const { isLoggedin, setIsLoggedin, backendUrl, getUserData, userData } = useContext(AppContext);
   const navigate = useNavigate();
+  const [sidebar, setSidebar] = useState(false);
 
   useEffect(() => {
     getUserData();  // Auto-fetch user data on load
+    setSidebar(false);
   }, []);
 
   const handleLogout = async () => {
@@ -35,9 +37,17 @@ const Navbar = () => {
     }
   };
 
+  const handleSidebar = () => {
+    setSidebar(true);
+  };
+
 
   return (
     <div className='navbar-main'>
+
+      <div className="hamburger" onClick={handleSidebar}>
+        <img src={images.hamburgerIcon} alt="" />
+      </div>
 
       <div className="logo">
         <a href="/">
@@ -80,6 +90,56 @@ const Navbar = () => {
           </button>
         )}
       </div>
+
+
+      {sidebar && (
+        <div className="sidebar">
+          <div className="sidebar-line"></div>
+          <div className="close-btn" onClick={() => setSidebar(false)}>×</div>
+
+          {isLoggedin && userData?.role === 'admin' && (
+            <>
+              <NavLink to="/admin-dashboard" onClick={() => setSidebar(false)}>Dashboard</NavLink>
+              <NavLink to="/admin-stats" onClick={() => setSidebar(false)}>Stats</NavLink>
+              <NavLink to="/admin-users" onClick={() => setSidebar(false)}>Users</NavLink>
+              <NavLink to="/admin-quizzes" onClick={() => setSidebar(false)}>Quizzes</NavLink>
+              <NavLink to="/admin-queries" onClick={() => setSidebar(false)}>Queries</NavLink>
+              <NavLink to="/admin-create-quiz" onClick={() => setSidebar(false)}>Create</NavLink>
+              <button onClick={() => {
+                handleLogout();
+                setSidebar(false);
+              }}>
+                <p>Logout</p>
+              </button>
+            </>
+          )}
+
+          {isLoggedin && userData?.role !== 'admin' && (
+            <>
+              <NavLink to="/" className={({ isActive }) => isActive ? "active" : ""} onClick={() => setSidebar(false)}>Home</NavLink>
+              <NavLink to="/quizzes" className={({ isActive }) => isActive ? "active" : ""} onClick={() => setSidebar(false)}>Quizzes</NavLink>
+              <NavLink to={`/share-profile/${userData?.developerId}`} className={({ isActive }) => isActive ? "active" : ""} onClick={() => setSidebar(false)}>Share</NavLink>
+              <NavLink to={`/progress/${userData?.developerId}`} className={({ isActive }) => isActive ? "active" : ""} onClick={() => setSidebar(false)}>Progress</NavLink>
+              <NavLink to="/profile" className={({ isActive }) => isActive ? "active" : ""} onClick={() => setSidebar(false)}>Profile</NavLink>
+              <button onClick={() => {
+                handleLogout();
+                setSidebar(false);
+              }}>
+                <p>Logout</p>
+              </button>
+            </>
+          )}
+
+          {!isLoggedin && (
+            <div className='abcd'><button id='sidebar-login-btn' onClick={() => {
+              navigate('/login');
+              setSidebar(false);
+            }}>
+              <p>Login</p>
+            </button></div>
+          )}
+        </div>
+      )}
 
     </div>
   )

@@ -129,3 +129,78 @@
     background-color: black;
     color: white;
 }
+
+
+@media (max-width: 500px) {
+    .share-main {
+        padding: 30px 20px;
+    }
+
+    .share-container {
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+        width: 100%;
+    }
+
+    .share-left,
+    .share-right {
+        width: 80%;
+        padding: 20px;
+    }
+
+    .share-left {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .share-left>img {
+        width: 150px;
+    }
+
+    .share-left>p:nth-child(2) {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .share-left>p:nth-child(3) {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .share-right {
+        padding-bottom: 40px;
+    }
+
+    .badges-title {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .badges {
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .badge {
+        width: 120px;
+    }
+
+    .badge img {
+        width: 30px;
+    }
+
+    .badge-p1,
+    .badge-p2 {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .badge-p3 {
+        font-size: 10px;
+        width: 70px;
+        height: 18px;
+    }
+}

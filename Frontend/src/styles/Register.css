@@ -89,3 +89,51 @@ form {
 .not-account a {
     color: blue;
 }
+
+
+@media (max-width: 500px) {
+    .register-main {
+        padding: 20px;
+    }
+
+    .form {
+        width: 80%;
+        padding: 20px 15px;
+        gap: 20px;
+    }
+
+    .register-title {
+        font-size: 20px;
+    }
+
+    .register-main .form form {
+        width: 100%;
+    }
+
+    #register-name,
+    #register-email,
+    #register-password {
+        width: 50vw;
+        font-size: 13px;
+    }
+
+    #register-gender {
+        width: 56vw;
+        height: 27px;
+        font-size: 13px;
+    }
+
+    #register-btn {
+        font-size: 14px;
+        padding: 5px 20px;
+    }
+
+    .error-msg {
+        font-size: 13px;
+    }
+
+    .not-account {
+        font-size: 13px;
+        text-align: center;
+    }
+}

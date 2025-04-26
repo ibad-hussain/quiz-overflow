@@ -137,14 +137,14 @@ const AdminUsers = () => {
 
       {/* Delete Modal */}
       {showModal && (
-        <div className="modal-overlay">
+        <div className="modal-overlay-adminUsers">
 
-          <div className="modal-content">
+          <div className="modal-content-adminUsers">
             <h3>Delete User Account</h3>
             <p className='confirmation-p'>Are you sure you want to delete this user ?</p>
             <p id='confirmation-p-1'>Name: {selectedUser?.name}</p>
             <p id='confirmation-p-2'>DeveloperID: {selectedUser?.developerId}</p>
-            <div className="modal-btns">
+            <div className="modal-btns-adminUsers">
               <button
                 id="P-no-btn"
                 onClick={() => {

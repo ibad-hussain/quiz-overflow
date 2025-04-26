@@ -7,6 +7,14 @@
     padding: 10px;
 }
 
+.hamburger {
+    display: none;
+}
+
+.sidebar {
+    display: none;
+}
+
 .logo a {
     text-decoration: none;
     display: flex;
@@ -74,4 +82,119 @@ a {
 
 .active {
     font-weight: 600;
+}
+
+
+@media(max-width: 500px) {
+    .navbar-main {
+        height: 4vh;
+    }
+
+    .hamburger {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        right: 8px;
+        cursor: pointer;
+    }
+
+    .links {
+        display: none;
+    }
+
+    .sidebar {
+        position: fixed;
+        top: 0;
+        right: 0;
+        height: 100%;
+        width: 120px;
+        background-color: #fff;
+        padding: 20px;
+        z-index: 1000;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        animation: sidebarSlideIn 0.3s ease;
+        transition: all 0.5s ease;
+    }
+
+    .sidebar-line {
+        height: 100%;
+        width: 10px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: #63afc2;
+        background: linear-gradient(135deg,
+                #63afc2 25%,
+                #8dcddd 25%,
+                #8dcddd 50%,
+                #63afc2 50%,
+                #63afc2 75%,
+                #8dcddd 75%,
+                #8dcddd);
+        background-size: 40px 40px;
+        animation: move 4s linear infinite;
+    }
+
+    .sidebar a,
+    .sidebar button {
+        font-size: 16px;
+        text-decoration: none;
+        border: none;
+        background: none;
+        text-align: left;
+        padding: 3px 0;
+        margin-left: 10px;
+    }
+
+    .sidebar button {
+        background-color: #43d685;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10px;
+        width: 70px;
+        padding: 5px 10px;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        outline-style: solid;
+        outline-width: 2px;
+        outline-color: rgb(0, 0, 0);
+    }
+
+    .sidebar button:hover {
+        background-color: #00ff73;
+    }
+
+    .sidebar .close-btn {
+        font-size: 30px;
+        margin-left: auto;
+        cursor: pointer;
+        margin-bottom: 20px;
+    }
+
+    .abcd {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #sidebar-login-btn {
+        margin-left: 10px;
+    }
+}
+
+
+@keyframes sidebarSlideIn {
+    from {
+        transform: translateX(100%);
+    }
+
+    to {
+        transform: translateX(0);
+    }
 }

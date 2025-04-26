@@ -166,10 +166,22 @@ const TakeQuizPage = () => {
                         <span className="first-span">
                             <span className="first-span-1">Note :</span>
                             <span className="first-span-2">
-                                <p>🎯&nbsp;&nbsp;{quizTitle} {quizCategory} Quiz</p>
-                                <p>📝&nbsp;&nbsp;Level:{quizLevel}&nbsp;&nbsp;-&nbsp;&nbsp;Questions:{quizQuestionsCount}&nbsp;&nbsp;-&nbsp;&nbsp;Mode:{quizMode}</p>
-                                <p>📌&nbsp;&nbsp;You are allowed to attempt the quiz just once</p>
-                                <p>🏆&nbsp;&nbsp;You need to score {quizScoreForBadge} out of {quizQuestionsCount} to earn a badge</p>
+                                <div className="first-span-2-div first-span-2-div1">
+                                    <p className="first-span-2-P1">🎯</p>
+                                    <p className="first-span-2-P2">{quizTitle} {quizCategory} Quiz</p>
+                                </div>
+                                <div className="first-span-2-div">
+                                    <p className="first-span-2-P1">📝</p>
+                                    <p className="first-span-2-P2">Level:{quizLevel}&nbsp;&nbsp;-&nbsp;&nbsp;Questions:{quizQuestionsCount}&nbsp;&nbsp;-&nbsp;&nbsp;Mode:{quizMode}</p>
+                                </div>
+                                <div className="first-span-2-div first-span-2-div3">
+                                    <p className="first-span-2-P1">📌</p>
+                                    <p className="first-span-2-P2">You are allowed to attempt the quiz just once</p>
+                                </div>
+                                <div className="first-span-2-div">
+                                    <p className="first-span-2-P1">🏆</p>
+                                    <p className="first-span-2-P2">You need to score {quizScoreForBadge} out of {quizQuestionsCount} to earn a badge</p>
+                                </div>
                             </span>
                         </span>
                         <span className="second-span">

@@ -5,7 +5,7 @@ import { AppContext } from '../context/AppContext';
 
 
 const GetStarted = () => {
-    
+
     const { isLoggedin } = useContext(AppContext);
     const navigate = useNavigate();
 
@@ -16,6 +16,7 @@ const GetStarted = () => {
             navigate('/login');
         }
     };
+
 
     return (
         <div className='getStarted-main'>

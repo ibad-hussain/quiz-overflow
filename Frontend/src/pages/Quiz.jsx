@@ -74,27 +74,27 @@ const Quiz = () => {
 
             <div className="main-title">{title} Quizzes</div>
 
-            <div className="quizzes-container">
+            <div className="quizzes-container-quizPage">
                 {quizzes.length === 0 ? (
                     <p>No quizzes found for {title}</p>
                 ) : (
                     quizzes.map((quiz) => (
-                        <div key={quiz._id} className="quizes-card quizes-card-quizPage">
-                            <div className="card-title-1">
-                                <p>{quiz.title} {quiz.category}</p>
+                        <div key={quiz._id} className="quizes-card-quizPage">
+                            <div className="card-title-1-quizPage">
+                                <p>{quiz.title} {quiz.category} Quiz</p>
                                 <p>{quiz.mode}</p>
                             </div>
-                            <div className="card-title-2">
+                            <div className="card-title-2-quizPage">
                                 <p>Level {quiz.level}</p>
                                 <p>{quiz.questionsCount} Questions</p>
                             </div>
                             {checkIfAttempted(quiz._id) ? (
-                                <button className="card-btn" disabled>
-                                    <span id="card-btn-disabled">Attempted</span>
+                                <button className="card-btn-quizPage" disabled>
+                                    <span id="card-btn-disabled-quizPage">Attempted</span>
                                 </button>
                             ) : (
                                 <Link to={`/quiz/${quiz._id}`}>
-                                    <button className="card-btn">
+                                    <button className="card-btn-quizPage">
                                         <svg
                                             height="24"
                                             width="24"

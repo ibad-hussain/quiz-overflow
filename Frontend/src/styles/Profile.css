@@ -131,6 +131,7 @@
     max-width: 500px;
     position: relative;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    animation: fadeInModal 0.5s ease;
 }
 
 .modal-content h3 {
@@ -201,4 +202,119 @@
 
 #P-delete-btn:hover {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+}
+
+
+@keyframes fadeInModal {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+
+@media screen and (max-width: 500px) {
+    .profile-main {
+        padding: 30px 20px;
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .main1-cont {
+        padding: 20px;
+        border-radius: 8px;
+    }
+
+    .main1-cont-upper img {
+        width: 140px;
+    }
+
+    .main1-cont-upper-right {
+        min-width: unset;
+        min-width: 50%;
+        margin-top: -10px;
+    }
+
+    .main1-cont-upper-right p:nth-child(1) {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .main1-cont-upper-right p:nth-child(2) {
+        text-align: center;
+        font-size: 14px;
+    }
+
+    .main1-cont-lower {
+        margin: 30px 0 10px 0;
+        gap: 12px;
+    }
+
+    .main1-cont-row {
+        flex-direction: column;
+        height: auto;
+        gap: 5px;
+        padding: 8px;
+        background-color: #c1ffdd;
+        border-radius: 10px;
+    }
+
+    .row-img {
+        width: 40px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .row-heading {
+        width: auto;
+        font-size: 14px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .row-content {
+        word-break: break-word;
+        font-size: 14px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    #row-content-0,
+    #row-content-1,
+    #row-content-2 {
+        font-size: 14px;
+    }
+
+    #row-content-0 {
+        margin: 0;
+    }
+
+    .modal-content {
+        width: 80%;
+    }
+
+    .modal-content input {
+        font-size: 14px;
+    }
+
+    .modal-btns {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .modal-btns button {
+        width: 100%;
+        font-size: 14px;
+        padding: 8px 0;
+    }
 }

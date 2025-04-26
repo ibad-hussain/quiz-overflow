@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import '../styles/TrendingQuizes.css';
+import '../styles/TrendingQuizzes.css';
 import { useNavigate } from 'react-router-dom';
 import { AppContext } from '../context/AppContext';
 
@@ -46,10 +46,10 @@ const TrendingQuizzes = () => {
                     </div>
                     <div className="quiz-ques">💬&nbsp;&nbsp;Which of the following best describes the behavior of <span id='span'>this</span> in JavaScript?</div>
                     <div className="quiz-options">
-                        <p>🔴 <span id='span'>this</span> always refers to the global object</p>
-                        <p>🟢 <span id='span'>this</span> refers to the object that owns the currently executing function</p>
-                        <p>🔴 The value of <span id='span'>this</span> is determined when the function is defined</p>
-                        <p>🔴 Arrow functions have the same <span id='span'>this</span> behavior as regular functions</p>
+                        <p>🔴 <span id='span'>this</span> always means global</p>
+                        <p>🟢 <span id='span'>this</span> means current object</p>
+                        <p>🔴 <span id='span'>this</span> is set at function define</p>
+                        <p>🔴 Arrow and regular have same <span id='span'>this</span></p>
                     </div>
                 </div>
             </div>
@@ -78,10 +78,10 @@ const TrendingQuizzes = () => {
                     </div>
                     <div className="quiz-ques">💬&nbsp;&nbsp;Which of the following statements about multiple inheritance in C++ is true?</div>
                     <div className="quiz-options">
-                        <p>🟢 It leads to the diamond problem if not handled properly</p>
-                        <p>🔴 It is not allowed in C++</p>
-                        <p>🔴 It can only be used with abstract classes</p>
-                        <p>🔴 It is only supported in C++20 and later</p>
+                        <p>🟢 Can cause diamond issue</p>
+                        <p>🔴 Not allowed in C++</p>
+                        <p>🔴 Only with abstract</p>
+                        <p>🔴 Only in C++20 and later</p>
                     </div>
                 </div>
             </div>

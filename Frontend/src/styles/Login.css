@@ -71,3 +71,44 @@ form {
 .not-account a {
     color: blue;
 }
+
+
+@media (max-width: 500px) {
+    .login-main {
+        padding: 20px;
+    }
+
+    .form {
+        width: 80%;
+        padding: 20px 15px;
+        gap: 20px;
+    }
+
+    .login-title {
+        font-size: 20px;
+    }
+
+    .login-main .form form {
+        width: 100%;
+    }
+
+    #login-email,
+    #login-password {
+        width: 50vw;
+        font-size: 13px;
+    }
+
+    #login-btn {
+        font-size: 14px;
+        padding: 5px 20px;
+    }
+
+    .error-msg {
+        font-size: 13px;
+    }
+
+    .not-account {
+        font-size: 13px;
+        text-align: center;
+    }
+}

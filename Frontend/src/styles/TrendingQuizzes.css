@@ -52,7 +52,7 @@
     background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
     border: none;
     letter-spacing: 0.05em;
-    border-radius: 8px;
+    border-radius: 10px;
 }
 
 .quiz-title-2 button svg {
@@ -110,4 +110,66 @@
     display: flex;
     justify-content: start;
     align-items: center;
+}
+
+
+@media (max-width: 500px) {
+    .trendingQuizes-main {
+        padding: 0px 20px;
+    }
+
+    .trendingQuizes-title {
+        font-size: 30px;
+    }
+
+    .quiz-container {
+        height: 250px;
+        position: relative;
+    }
+
+    .quiz-title {
+        justify-content: center;
+    }
+
+    .quiz-title-1 {
+        font-size: 19px;
+    }
+
+    .quiz-title-2 {
+        position: absolute;
+        bottom: 10px;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .quiz-title-2 button {
+        font-size: 15px;
+        border-radius: 50px;
+        padding: 10px 15px;
+    }
+
+    .quiz-ques {
+        font-size: 16px;
+    }
+
+    .quiz-options {
+        font-size: 14px;
+    }
+
+    .quiz-container-1 {
+        margin-bottom: 20px;
+        justify-content: center;
+    }
+
+    .quiz-container-2 {
+        margin-bottom: 20px;
+        justify-content: center;
+    }
+
+    .quiz-container-3 {
+        justify-content: center;
+    }
 }

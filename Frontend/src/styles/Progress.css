@@ -178,3 +178,72 @@ th {
         color: purple;
     }
 }
+
+
+@media (max-width: 500px) {
+    .progress-main {
+        padding: 30px 20px;
+    }
+
+    .progress-main-title {
+        font-size: 25px;
+        text-align: center;
+    }
+
+    #totalQuizzesTaken,
+    #totalBadgesEarned {
+        font-size: 16px;
+    }
+
+    .language-container {
+        font-size: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+        margin: 30px 0 15px 0;
+    }
+
+    #language {
+        font-size: 16px;
+        padding: 6px;
+    }
+
+    table {
+        font-size: 14px;
+        overflow-x: auto;
+        display: block;
+        background-color: transparent;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    table::-webkit-scrollbar {
+        height: 8px;
+    }
+
+    table::-webkit-scrollbar-track {
+        background: transparent;
+    }
+
+    table::-webkit-scrollbar-thumb {
+        background-color: #888;
+        border-radius: 10px;
+    }
+
+    th,
+    td {
+        padding: 6px;
+        font-size: 14px;
+        white-space: nowrap;
+    }
+
+    td {
+        background-color: #9af7c4;
+    }
+
+    #colorChange1Progress,
+    #colorChange2Progress {
+        font-size: 10px;
+    }
+}

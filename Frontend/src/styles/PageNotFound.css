@@ -41,3 +41,18 @@
         transform: translateY(0);
     }
 }
+
+
+@media(max-width: 500px) {
+    .pageNotFound-main img {
+        max-width: 300px;
+    }
+
+    .pageNotFound-main h3 {
+        font-size: 1.9rem;
+    }
+
+    .pageNotFound-main p {
+        font-size: 0.9rem;
+    }
+}

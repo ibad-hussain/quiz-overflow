@@ -26,7 +26,8 @@ import githubIcon from "../assets/githubIcon.png";
 import shareIcon from "../assets/shareIcon.png";
 import deleteIcon3 from "../assets/deleteIcon3.png";
 import editIcon from "../assets/editIcon.png";
-import pageNotFoundImage from "../assets/pageNotFoundImage.png"
+import pageNotFoundImage from "../assets/pageNotFoundImage.png";
+import hamburgerIcon from "../assets/hamburgerIcon.png";
 
 
 export const images = {
@@ -58,5 +59,6 @@ export const images = {
     nameIcon,
     passwordIcon,
     shareIcon,
-    pageNotFoundImage
+    pageNotFoundImage,
+    hamburgerIcon
 };

@@ -56,8 +56,20 @@ const Features = () => {
         ))}
       </div>
 
+      <div className="features-cards-500">
+        {featuresDetails.map((feature, index) => (
+          <div className="card-500" key={index}>
+            <div className='img-500'>
+              <img src={feature.img} alt={`feature ${index + 1}`} />
+            </div>
+            <p className='card-heading-500'>{feature.title}</p>
+            <p className='card-subheading-500'>{feature.desc}</p>
+          </div>
+        ))}
+      </div>
+
     </div>
   )
 }
 
-export default Features;
+export default Features

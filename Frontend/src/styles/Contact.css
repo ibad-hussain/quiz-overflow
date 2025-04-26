@@ -69,3 +69,41 @@ form {
     font-size: 14px;
     color: red;
 }
+
+
+@media (max-width: 500px) {
+    .contact-main {
+        padding: 20px;
+    }
+
+    .form {
+        width: 80%;
+        padding: 20px 15px;
+        gap: 20px;
+    }
+
+    .contact-title {
+        font-size: 20px;
+    }
+
+    .contact-main .form form {
+        width: 100%;
+    }
+
+    #contact-name,
+    #contact-email,
+    #contact-query {
+        width: 50vw;
+        font-size: 13px;
+        border-radius: 8px;
+    }
+
+    #contact-btn {
+        font-size: 14px;
+        padding: 5px 20px;
+    }
+
+    .error-msg {
+        font-size: 13px;
+    }
+}

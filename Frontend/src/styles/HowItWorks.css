@@ -84,3 +84,65 @@
 .howItWorks-card-subheading {
     font-size: 17px;
 }
+
+
+@media (max-width: 500px) {
+    .howItWorks-main {
+        padding: 0px 20px;
+    }
+
+    .howItWorks-title {
+        font-size: 30px;
+    }
+
+    .howItWorks-cards {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        overflow-x: auto;
+        overflow-y: hidden;
+        gap: 40px;
+        padding: 20px;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+        flex-wrap: nowrap;
+    }
+
+    .howItWorks-cards::-webkit-scrollbar {
+        height: 8px;
+    }
+
+    .howItWorks-cards::-webkit-scrollbar-track {
+        background: transparent;
+    }
+
+    .howItWorks-cards::-webkit-scrollbar-thumb {
+        background-color: #888;
+        border-radius: 10px;
+    }
+
+    .howItWorks-card {
+        min-width: 200px;
+        height: 180px;
+        box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.280);
+        transform: skew(0deg);
+        cursor: grab;
+    }
+
+    .howItWorks-card:hover {
+        height: 180px;
+    }
+
+    .howItWorks-card-heading {
+        font-size: 20px;
+        font-weight: 600;
+        text-align: center;
+        margin: 1.3rem;
+        text-shadow: -10px 5px 20px rgba(0, 0, 0, 0.4);
+    }
+
+    .howItWorks-card-subheading {
+        font-size: 16px;
+    }
+}

@@ -1,6 +1,6 @@
 # Quiz Overflow - Ultimate Quiz Platform For Developers
 ## 🚀 Overview
-**Quiz Overflow** is a full-stack flagship web application designed for developers to test and improve their programming skills through MCQ-based quizzes. With user authentication, role-based access (user/admin), badges for achievements, quiz progress tracking, and a clean UI, this platform is built with learning, engagement, and performance in mind.
+**Quiz Overflow** is a full-stack flagship web application designed for developers to test and improve their programming skills through MCQ-based quizzes. With user authentication, role-based access (user/admin), badges for achievements, quiz progress tracking, and a clean responsive UI, this platform is built with learning, engagement, and performance in mind.
 
 > This project took over a month of consistent effort to build from scratch. Every component, route, and feature was carefully crafted and tested to deliver a smooth, interactive, and secure experience. Whether you're preparing for technical interviews, practicing daily challenges, or just leveling up your dev skills, **Quiz Overflow** is your go-to companion.
 
